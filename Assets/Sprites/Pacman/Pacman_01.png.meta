@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cf7ef661d9ae2614b90230a27b6a109b
+guid: 5bf564c04902dd449a6f76bee10e6e21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3384411708189302445
-    second: Node_0
+      213: -854346276578218440
+    second: Pacman_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Node_0
+      name: Pacman_01_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 18
-        height: 18
+        x: 0
+        y: 0
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35124b79b772801d0800000000000000
-      internalID: -3384411708189302445
+      spriteID: 83ea0658690c424f0800000000000000
+      internalID: -854346276578218440
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Node_0: -3384411708189302445
+      Pacman_01_0: -854346276578218440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

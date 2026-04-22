@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: cf7ef661d9ae2614b90230a27b6a109b
+guid: 38cc929329f3e9145acb6e748acd05a5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3384411708189302445
-    second: Node_0
+      213: 1496437616492063381
+    second: Ghost_Eyes_Left_0
+  - first:
+      213: 1685809705144076848
+    second: Ghost_Eyes_Left_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Node_0
+      name: Ghost_Eyes_Left_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 18
-        height: 18
+        x: 1
+        y: 6
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35124b79b772801d0800000000000000
-      internalID: -3384411708189302445
+      spriteID: 59aaa8f651a64c410800000000000000
+      internalID: 1496437616492063381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Eyes_Left_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 6
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ac40abef2356710800000000000000
+      internalID: 1685809705144076848
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Node_0: -3384411708189302445
+      Ghost_Eyes_Left_0: 1496437616492063381
+      Ghost_Eyes_Left_1: 1685809705144076848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
