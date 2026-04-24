@@ -10,9 +10,19 @@ public class GameManager : MonoBehaviour
 	public int Score { get; private set; }
 	public int Lives { get; private set; }
 
+	private bool isGameOver => Lives <= 0;
+
 	void Start()
 	{
 		NewGame();
+	}
+
+	void Update()
+	{
+		if (Input.anyKeyDown && isGameOver)
+		{
+			NewGame();
+		}
 	}
 
 	private void NewGame()
@@ -72,7 +82,7 @@ public class GameManager : MonoBehaviour
 	{
 		pacman.Deactivate();
 		SetLives(Lives - 1);
-		
+
 		if (Lives > 0)
 		{
 			Invoke(nameof(ResetState), resetDelay); // Respawn
