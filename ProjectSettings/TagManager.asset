@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Ghost
   layers:
   - Default
   - TransparentFX
@@ -46,6 +47,9 @@ TagManager:
     locked: 0
   - name: Ghost
     uniqueID: 2355937215
+    locked: 0
+  - name: GhostEyes
+    uniqueID: 4057629455
     locked: 0
   - name: Pacman
     uniqueID: 3638332145
