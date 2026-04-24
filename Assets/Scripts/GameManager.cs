@@ -9,8 +9,11 @@ public class GameManager : MonoBehaviour
 
 	public int Score { get; private set; }
 	public int Lives { get; private set; }
+	
+	private int pelletCounts = 0;
 
 	private bool isGameOver => Lives <= 0;
+	private bool isAllPelletsEaten => pelletCounts <= 0;
 
 	void Start()
 	{
@@ -29,6 +32,7 @@ public class GameManager : MonoBehaviour
 	{
 		SetScore(0);
 		SetLives(3);
+		pelletCounts = pellets.childCount;
 		NewRound();
 	}
 
@@ -91,5 +95,25 @@ public class GameManager : MonoBehaviour
 		{
 			GameOver();
 		}
+	}
+
+	public void PelletEaten(Pellet pellet)
+	{
+		pellet.gameObject.SetActive(false);
+		SetScore(Score + pellet.Points);
+
+		if (isAllPelletsEaten)
+		{
+			pacman.Deactivate();
+			Invoke(nameof(NewRound), resetDelay); // You win, start a new round
+		}
+	}
+
+	public void PowerPelletEaten(PowerPellet pellet)
+	{
+		PelletEaten(pellet);
+		pelletCounts--;
+		
+		// TODO change ghost state to vulnerable for a duration
 	}
 }
