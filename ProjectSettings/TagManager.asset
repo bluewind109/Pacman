@@ -44,6 +44,12 @@ TagManager:
   - name: Pellet
     uniqueID: 808351395
     locked: 0
+  - name: Ghost
+    uniqueID: 2355937215
+    locked: 0
+  - name: Pacman
+    uniqueID: 3638332145
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
