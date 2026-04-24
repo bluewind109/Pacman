@@ -2,5 +2,18 @@ using UnityEngine;
 
 public class PowerPellet : Pellet
 {
-    [SerializeField] private float duration = 8f;
+    public float Duration { get; private set; } = 8f;
+
+    protected override void Eat()
+    {
+        GameManager.Instance?.PowerPelletEaten(this);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Eat();
+        }
+    }
 }

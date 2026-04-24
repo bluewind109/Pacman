@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+	public static GameManager Instance { get; private set; }
+
 	[SerializeField] private Ghost[] ghosts;
 	[SerializeField] private Player pacman;
 	[SerializeField] private Transform pellets;
@@ -9,11 +11,17 @@ public class GameManager : MonoBehaviour
 
 	public int Score { get; private set; }
 	public int Lives { get; private set; }
+	public int GhostMultiplier { get; private set; } = 1;
 	
 	private int pelletCounts = 0;
 
 	private bool isGameOver => Lives <= 0;
 	private bool isAllPelletsEaten => pelletCounts <= 0;
+
+	void Awake()
+	{
+		Instance = this;
+	}
 
 	void Start()
 	{
@@ -48,6 +56,7 @@ public class GameManager : MonoBehaviour
 
 	private void ResetState()
 	{
+		ResetGhostMultiplier();
 		foreach (Ghost ghost in ghosts)
 		{
 			ghost.ResetState();
@@ -69,6 +78,7 @@ public class GameManager : MonoBehaviour
 	private void SetScore(int score)
 	{
 		Score = score;
+		Debug.Log("Score: " + Score);
 	}
 
 	private void SetLives(int lives)
@@ -78,7 +88,9 @@ public class GameManager : MonoBehaviour
 
 	public void GhostEaten(Ghost ghost)
 	{
-		SetScore(Score + ghost.Points);
+		int points = ghost.Points * GhostMultiplier;
+		SetScore(Score + points);
+		GhostMultiplier++;
 		ghost.Die();
 	}
 
@@ -101,6 +113,7 @@ public class GameManager : MonoBehaviour
 	{
 		pellet.gameObject.SetActive(false);
 		SetScore(Score + pellet.Points);
+		pelletCounts--;
 
 		if (isAllPelletsEaten)
 		{
@@ -111,9 +124,14 @@ public class GameManager : MonoBehaviour
 
 	public void PowerPelletEaten(PowerPellet pellet)
 	{
-		PelletEaten(pellet);
-		pelletCounts--;
-		
 		// TODO change ghost state to vulnerable for a duration
+		CancelInvoke(nameof(ResetGhostMultiplier));
+		Invoke(nameof(ResetGhostMultiplier), pellet.Duration);
+		PelletEaten(pellet);
+	}
+
+	private void ResetGhostMultiplier()
+	{
+		GhostMultiplier = 1;
 	}
 }
