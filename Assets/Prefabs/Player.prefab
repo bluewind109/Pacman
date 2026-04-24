@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7530113911805266066}
   - component: {fileID: 3007053186319562182}
   - component: {fileID: 4097870817562010663}
+  - component: {fileID: 2570735392265395074}
   - component: {fileID: 3861675524177237653}
   - component: {fileID: 1205580258410460559}
   - component: {fileID: 339350794236752002}
@@ -67,6 +68,24 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5bf564c04902dd449a6f76bee10e6e21, type: 3}
   animationSpeed: 0.125
   loop: 1
+--- !u!114 &2570735392265395074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7242445447774189446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f0519b7b833004d929cd50b0897f8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Movement
+  speed: 8
+  speedMultiplier: 1
+  initialDirection: {x: 1, y: 0}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!212 &3861675524177237653
 SpriteRenderer:
   serializedVersion: 2
