@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 	public void ResetState()
 	{
 		this.gameObject.SetActive(true);
+		movement.ResetState();
 	}
 
 	public void Deactivate()

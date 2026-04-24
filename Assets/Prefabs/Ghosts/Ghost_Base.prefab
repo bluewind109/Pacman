@@ -430,6 +430,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5767792444753632261}
   - component: {fileID: 7232229290021034657}
+  - component: {fileID: 1737849426746362147}
+  - component: {fileID: 8477273558438231413}
+  - component: {fileID: 7085798464633278737}
+  - component: {fileID: 979795112392492197}
   - component: {fileID: 3415286242972283299}
   - component: {fileID: 866267018984917065}
   - component: {fileID: 5101991728216350609}
@@ -473,6 +477,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ghost
   reviveDuration: 5
   points: 200
+  initialBehavior: {fileID: 0}
+  target: {fileID: 0}
+--- !u!114 &1737849426746362147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015289675999732336}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b62055489e1ea7a40b16ee515e5ce872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostHome
+  Duration: 0
+--- !u!114 &8477273558438231413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015289675999732336}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6996699af092ebf4fa79eef212296e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostScatter
+  Duration: 7
+--- !u!114 &7085798464633278737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015289675999732336}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c883720d98049fe4db9a964903a8f0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostChase
+  Duration: 20
+--- !u!114 &979795112392492197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015289675999732336}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293e9276bd5940742a519fffe0512390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostFrightened
+  Duration: 8
 --- !u!114 &3415286242972283299
 MonoBehaviour:
   m_ObjectHideFlags: 0

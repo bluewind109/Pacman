@@ -76,8 +76,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Blinky Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7232229290021034657, guid: 664b5e15bbaaf574782beaa4beb6659f, type: 3}
+      propertyPath: initialBehavior
+      value: 
+      objectReference: {fileID: 1275635327566357670}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 664b5e15bbaaf574782beaa4beb6659f, type: 3}
+--- !u!114 &1275635327566357670 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7085798464633278737, guid: 664b5e15bbaaf574782beaa4beb6659f, type: 3}
+  m_PrefabInstance: {fileID: 8351406243938678199}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c883720d98049fe4db9a964903a8f0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostChase

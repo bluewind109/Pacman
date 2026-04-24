@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 	public int Score { get; private set; }
 	public int Lives { get; private set; }
 	public int GhostMultiplier { get; private set; } = 1;
-	
+
 	private int pelletCounts = 0;
 
 	private bool isGameOver => Lives <= 0;
@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
 	private void ResetState()
 	{
 		ResetGhostMultiplier();
+
 		foreach (Ghost ghost in ghosts)
 		{
 			ghost.ResetState();
@@ -96,6 +97,11 @@ public class GameManager : MonoBehaviour
 
 	public void PacmanEaten()
 	{
+		foreach (Ghost ghost in ghosts)
+		{
+			ghost.Deactivate();
+		}
+
 		pacman.Deactivate();
 		SetLives(Lives - 1);
 

@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
         ResetState();
     }
 
-    private void ResetState()
+    public void ResetState()
     {
         speedMultiplier = 1.0f;
         Direction = initialDirection;

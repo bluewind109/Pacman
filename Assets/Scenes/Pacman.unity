@@ -119,6 +119,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &105249497 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2800275968543749420, guid: 5e616b02daa81c04ba7d71bee401726b, type: 3}
+  m_PrefabInstance: {fileID: 4462662089781769058}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e2ab3512c1af84e938d1beaec5b1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ghost
+--- !u!114 &374753555 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1709166101751967510, guid: 6cc0ba5b6a84bf2408410a956d608995, type: 3}
+  m_PrefabInstance: {fileID: 6863009439037848791}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e2ab3512c1af84e938d1beaec5b1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ghost
 --- !u!114 &426209804 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3007053186319562182, guid: 9e917d819a31b3845bc2856d942f771a, type: 3}
@@ -130,6 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c057a97f5adb8d44a6341e5fefac92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+--- !u!4 &426209805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7530113911805266066, guid: 9e917d819a31b3845bc2856d942f771a, type: 3}
+  m_PrefabInstance: {fileID: 1281349178499911139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,11 +325,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1802941523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7369407032099586532, guid: 0dd1ea99fc88b8b498c21c1e702488d1, type: 3}
+  m_PrefabInstance: {fileID: 2434379316917312201}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e2ab3512c1af84e938d1beaec5b1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ghost
 --- !u!4 &1932156771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3978567815152146306, guid: dd3acbcf0e845454bb06485017884db7, type: 3}
   m_PrefabInstance: {fileID: 1995132776808362643}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2074716940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6960197872770265550, guid: a1a58e36fb629d2478a38ac35a477e43, type: 3}
+  m_PrefabInstance: {fileID: 2694667563315119764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e2ab3512c1af84e938d1beaec5b1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ghost
 --- !u!1001 &1184370297243295245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -323,6 +372,26 @@ PrefabInstance:
       propertyPath: pellets
       value: 
       objectReference: {fileID: 1932156771}
+    - target: {fileID: 5057628150985819932, guid: 313b91644c348ee48812a0d6057d7119, type: 3}
+      propertyPath: ghosts.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5057628150985819932, guid: 313b91644c348ee48812a0d6057d7119, type: 3}
+      propertyPath: 'ghosts.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1802941523}
+    - target: {fileID: 5057628150985819932, guid: 313b91644c348ee48812a0d6057d7119, type: 3}
+      propertyPath: 'ghosts.Array.data[1]'
+      value: 
+      objectReference: {fileID: 105249497}
+    - target: {fileID: 5057628150985819932, guid: 313b91644c348ee48812a0d6057d7119, type: 3}
+      propertyPath: 'ghosts.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2074716940}
+    - target: {fileID: 5057628150985819932, guid: 313b91644c348ee48812a0d6057d7119, type: 3}
+      propertyPath: 'ghosts.Array.data[3]'
+      value: 
+      objectReference: {fileID: 374753555}
     - target: {fileID: 8045321526333687554, guid: 313b91644c348ee48812a0d6057d7119, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -526,6 +595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Clyde
       objectReference: {fileID: 0}
+    - target: {fileID: 7369407032099586532, guid: 0dd1ea99fc88b8b498c21c1e702488d1, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 426209805}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -567,6 +640,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6960197872770265550, guid: a1a58e36fb629d2478a38ac35a477e43, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 426209805}
     - target: {fileID: 7319138726375475487, guid: a1a58e36fb629d2478a38ac35a477e43, type: 3}
       propertyPath: m_Name
       value: Ghost_Inky
@@ -616,6 +693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Pinky
       objectReference: {fileID: 0}
+    - target: {fileID: 2800275968543749420, guid: 5e616b02daa81c04ba7d71bee401726b, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 426209805}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -633,6 +714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Blinky
       objectReference: {fileID: 0}
+    - target: {fileID: 1709166101751967510, guid: 6cc0ba5b6a84bf2408410a956d608995, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 426209805}
     - target: {fileID: 2588856273278167474, guid: 6cc0ba5b6a84bf2408410a956d608995, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
