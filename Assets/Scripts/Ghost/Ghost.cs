@@ -7,12 +7,12 @@ public class Ghost : MonoBehaviour
     [SerializeField] private GhostBehavior initialBehavior;
     [SerializeField] private Transform target;
 
-    private Movement movement;
+    public Movement movement { get; private set; }
 
-    private GhostHome home;
-    private GhostScatter scatter;
-    private GhostChase chase;
-    private GhostFrightened frightened;
+    public GhostHome home { get; private set; }
+    public GhostScatter scatter { get; private set; }
+    public GhostChase chase { get; private set; }
+    public GhostFrightened frightened { get; private set; }
 
     private Vector2 startingPosition;
 

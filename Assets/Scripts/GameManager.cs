@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
 	private void SetScore(int score)
 	{
 		Score = score;
-		Debug.Log("Score: " + Score);
+		// Debug.Log("Score: " + Score);
 	}
 
 	private void SetLives(int lives)
