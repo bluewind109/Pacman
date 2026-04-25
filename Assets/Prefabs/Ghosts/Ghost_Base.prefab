@@ -492,6 +492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostHome
   Duration: 0
+  inside: {fileID: 0}
+  outside: {fileID: 0}
 --- !u!114 &8477273558438231413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +533,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostFrightened
   Duration: 8
+  body: {fileID: 6035053566665522065}
+  eyes: {fileID: 601150191429977067}
+  blue: {fileID: 1958704280900891075}
+  white: {fileID: 2448413572134465101}
 --- !u!114 &3415286242972283299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,11 +550,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   speed: 7
-  speedMultiplier: 1
   initialDirection: {x: 0, y: 1}
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 512
+  speedMultiplier: 1
 --- !u!50 &866267018984917065
 Rigidbody2D:
   serializedVersion: 5

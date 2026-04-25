@@ -5,6 +5,8 @@ public class GhostHome : GhostBehavior
 	[SerializeField] private Transform inside;
 	[SerializeField] private Transform outside;
 
+	public Transform Inside { get { return inside; } }
+
 	private Awaitable exitTransition;
 
 	void OnEnable()

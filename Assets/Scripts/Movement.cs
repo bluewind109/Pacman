@@ -4,9 +4,10 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private float speed = 8f;
-    [SerializeField] private float speedMultiplier = 1.0f;
     [SerializeField] private Vector2 initialDirection;
     [SerializeField] private LayerMask obstacleLayer;
+    
+    [HideInInspector] public float speedMultiplier = 1.0f;
 
     public Rigidbody2D Rb2d { get; private set; }
     public Vector2 Direction { get; private set; }

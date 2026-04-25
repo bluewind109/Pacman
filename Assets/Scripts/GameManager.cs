@@ -130,10 +130,21 @@ public class GameManager : MonoBehaviour
 
 	public void PowerPelletEaten(PowerPellet pellet)
 	{
-		// TODO change ghost state to vulnerable for a duration
 		CancelInvoke(nameof(ResetGhostMultiplier));
 		Invoke(nameof(ResetGhostMultiplier), pellet.Duration);
 		PelletEaten(pellet);
+
+		foreach (Ghost ghost in ghosts)
+		{
+			if (!ghost.frightened.enabled)
+			{
+				ghost.scatter.Disable();
+				ghost.chase.Disable();
+			}
+
+			ghost.frightened.Enable(pellet.Duration); // Restart frightened duration
+													  // if the ghost is already frightened
+		}
 	}
 
 	private void ResetGhostMultiplier()

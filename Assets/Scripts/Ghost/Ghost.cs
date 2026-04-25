@@ -60,7 +60,8 @@ public class Ghost : MonoBehaviour
 
     public void Die()
     {
-        Deactivate();
+        initialBehavior = home;
+        // Deactivate();
         Invoke(nameof(ResetState), reviveDuration);
     }
 
@@ -71,6 +72,7 @@ public class Ghost : MonoBehaviour
             if (frightened.enabled)
             {
                 GameManager.Instance?.GhostEaten(this);
+                frightened.Eaten();
             }
             else
             {
