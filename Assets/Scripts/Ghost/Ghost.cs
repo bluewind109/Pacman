@@ -5,8 +5,8 @@ public class Ghost : MonoBehaviour
     [SerializeField] private float reviveDuration = 5f;
     [SerializeField] private int points = 200;
     [SerializeField] private GhostBehavior initialBehavior;
-    [SerializeField] private Transform target;
 
+    public Transform target;
     public Movement movement { get; private set; }
 
     public GhostHome home { get; private set; }
