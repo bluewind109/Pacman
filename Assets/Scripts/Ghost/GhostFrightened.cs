@@ -69,7 +69,7 @@ public class GhostFrightened : GhostBehavior
 	void OnTriggerEnter2D(Collider2D collision)
 	{
 		Node node = collision.GetComponent<Node>();
-		if (node && this.enabled && !ghost.frightened.enabled)
+		if (node && this.enabled)
 		{
 			Vector2 direction = Vector2.zero;
 			float maxDistance = float.MinValue;
