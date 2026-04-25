@@ -430,6 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5767792444753632261}
   - component: {fileID: 7232229290021034657}
+  - component: {fileID: 937191705362065894}
   - component: {fileID: 1737849426746362147}
   - component: {fileID: 8477273558438231413}
   - component: {fileID: 7085798464633278737}
@@ -479,6 +480,23 @@ MonoBehaviour:
   points: 200
   initialBehavior: {fileID: 0}
   target: {fileID: 0}
+--- !u!114 &937191705362065894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015289675999732336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ecca1b023e3b5148868c0d35b7846dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostEyes
+  spriteRenderer: {fileID: 601150191429977067}
+  up: {fileID: 21300000, guid: a081c8ea563e07d4588483287c7da624, type: 3}
+  down: {fileID: 21300000, guid: 3d111b0166bb510438152b51260786d1, type: 3}
+  left: {fileID: 21300000, guid: 38cc929329f3e9145acb6e748acd05a5, type: 3}
+  right: {fileID: 21300000, guid: 9e9d3536c837a6c4b82515eaf00b6a39, type: 3}
 --- !u!114 &1737849426746362147
 MonoBehaviour:
   m_ObjectHideFlags: 0
